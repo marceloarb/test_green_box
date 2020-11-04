@@ -6,5 +6,7 @@ class math():
         for i in len(arg1):
             arr.append(arg1[i])
         return arr
+
+    
         
 
