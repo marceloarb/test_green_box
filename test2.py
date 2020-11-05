@@ -1,4 +1,10 @@
 from class1 import math
+import unittest
 
-def test_iterate():
-    assert math.iterate([3,4,5,6]) == [3,4,5,6], "The array should be the same"
+class TestArray(unittest.TestCase):
+    def test_iterate(self):
+        self.assertEqual(math.iterate([3,4,5,6]),[3,4,5,6]) 
+
+
+if __name__ == '__main__':
+    unittest.main()

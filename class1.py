@@ -3,7 +3,8 @@ class math():
         return arg1*arg2
     def iterate(arg1):
         arr = []
-        for i in len(arg1):
+        length = len(arg1)
+        for i in range(length):
             arr.append(arg1[i])
         return arr
 
