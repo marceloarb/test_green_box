@@ -11,6 +11,3 @@ class deckOfCards:
                 deck.append(value +" "+ suit)
         return deck
     
-p1 = deckOfCards()
-
-print(p1.create_deck())
