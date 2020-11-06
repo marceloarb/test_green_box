@@ -1,13 +1,16 @@
-import card
+from card import card
 
-class deckOfCards():
+class deckOfCards:
     def __init__(self):
-        suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
-        values = [1,2,3,4,5,6,7,8,9,10,11,12,13]
-
+        self.suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
+        self.values = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
     def create_deck(self):
-        print(suits)
-        for suit in suits:
-            for value in values:
-                self.append( card(suit,value))
+        deck = []
+        for suit in self.suits:
+            for value in self.values:
+                deck.append(value +" "+ suit)
+        return deck
 
+p1 = deckOfCards()
+
+print(p1.create_deck())
