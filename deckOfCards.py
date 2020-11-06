@@ -10,7 +10,7 @@ class deckOfCards:
             for value in self.values:
                 deck.append(value +" "+ suit)
         return deck
-
+    
 p1 = deckOfCards()
 
 print(p1.create_deck())
