@@ -1,7 +1,17 @@
+from deckOfCards import deckOfCards
 
 class card:
-    def __init__(self,suit,value):
-        self.value = value
-        self.suit = suit
+    def __init__(self):
+        pass
+    def user_hand_texas_holden(self):
+        hand = []
+        create_deck = deckOfCards.create_deck()
+        shuffle_deck = deckOfCards.shuffle_deck()
+        deck_of_cards = deckOfCards().deck
+        hand.append(deck_of_cards.pop(len(deck_of_cards)-1))
+        hand.append(deck_of_cards.pop(len(deck_of_cards)-1))
+        print(hand)
+
+
     
     

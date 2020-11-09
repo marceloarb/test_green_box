@@ -1,4 +1,3 @@
-from card import card
 from random import shuffle 
 
 class deckOfCards:
