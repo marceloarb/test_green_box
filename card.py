@@ -6,8 +6,7 @@ class card:
     def user_hand_texas_holden(self):
         hand = []
         create_deck = deckOfCards().create_deck()
-        shuffle_deck = deckOfCards().shuffle_deck()
-        deck_of_cards = deckOfCards().deck
+        deck_of_cards = deckOfCards().shuffle_deck()
         hand.append(deck_of_cards.pop(len(deck_of_cards)-1))
         hand.append(deck_of_cards.pop(len(deck_of_cards)-1))
         return hand

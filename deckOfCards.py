@@ -17,4 +17,6 @@ class deckOfCards:
         else:
             shuffle(self.deck)
             return self.deck
-    
+    def getDeck(self):
+        deck = self.shuffle_deck()
+        return deck

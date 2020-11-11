@@ -11,3 +11,6 @@ class TestCard(unittest.TestCase):
         expected = card().user_hand_texas_holden()
         actual = card().user_hand_texas_holden()
         self.assertNotEqual(actual,expected)
+
+if __name__ == '__main__':
+    unittest.main()
