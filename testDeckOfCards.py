@@ -14,7 +14,7 @@ class TestDeckCards(unittest.TestCase):
         expected = 48
         user1 = card().user_hand_texas_holden()
         user2 = card().user_hand_texas_holden()
-        actual = len(deckOfCards().getDeck())
+        actual = len(card().deck_of_cards)
         self.assertEqual(actual,expected)
     def test_Shuffle_Deck_Of_Cards(self):
         expected = deckOfCards().create_deck()
