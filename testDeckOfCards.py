@@ -6,7 +6,7 @@ from card import card
 class TestDeckCards(unittest.TestCase):
     def test_Deck_Of_Cards_Count(self):
         expected = 52
-        length = len(deckOfCards().create_deck())
+        length = len(deckOfCards().deck)
         actual = length
         self.assertEqual(actual,expected)
     #Ask Josh if you can check if the deck of cards empty can be checked like that or if we need to check the same function like the one above.
@@ -17,7 +17,7 @@ class TestDeckCards(unittest.TestCase):
         actual = len(card().deck_of_cards)
         self.assertEqual(actual,expected)
     def test_Shuffle_Deck_Of_Cards(self):
-        expected = deckOfCards().create_deck()
+        expected = deckOfCards().deck
         actual = deckOfCards().shuffle_deck()
         self.assertNotEqual(actual,expected)
 
