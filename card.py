@@ -1,8 +1,11 @@
 from deckOfCards import deckOfCards
 
-class card:
-    def __init__(self):
-        self.deck_of_cards = deckOfCards().deck
+class card():
+    SUITS = ("Clubs", "Diamonds", "Hearts", "Spades")
+    RANKS = (
+                "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+                "Jack", "Queen", "King", "Ace"
+            )
     def user_hand_texas_holden(self):
         print(self.deck_of_cards)
         hand = []

@@ -2,9 +2,7 @@ from random import shuffle
 
 class deckOfCards:
     def __init__(self):
-        self.deck = []
-        self.suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
-        self.values = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+        pass
     def create_deck(self):
         for suit in self.suits:
             for value in self.values:
