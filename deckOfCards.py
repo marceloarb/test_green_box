@@ -1,17 +1,32 @@
 from random import shuffle 
 
 class deckOfCards:
+    """A class modelled for a deck"""
+
     def __init__(self):
-        pass
-    def create_deck(self):
-        for suit in self.suits:
-            for value in self.values:
-                self.deck.append(value +" "+ suit)
-    def shuffle_deck(self):
-        if len(self.deck) < 52:
-            print("Cannot shuffle the cards")
-        else:
-            shuffle(self.deck)
-    def get_deck(self):
-        self.create_deck()
-        self.shuffle_deck()            
+        """Initializes a deck, builds and shuffles the cards"""
+        self.cards = []
+        self.build()
+        self.shuffle()
+
+    def build(self):
+        """Builds the deck"""
+        for suit in ["Spades", "Clubs", "Diamond", "Hearts"]:
+            for value in range(1, 14):
+                self.cards.append(Card(value, suit))
+
+    def shuffle(self):
+        """Shuffles the deck"""
+        for i in range(len(self.cards) - 1, 0, -1):
+            r = random.randint(0, i)
+            self.cards[i], self.cards[r] = self.cards[r], self.cards[i]
+
+    def find_amount(self):
+        """Finds the amount of cards left in the deck"""
+        return len(self.cards)
+
+    def draw_card(self):
+        """Draws a card"""
+        return self.cards.pop()
+    
+    

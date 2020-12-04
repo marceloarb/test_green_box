@@ -1,13 +1,11 @@
-from deckOfCards import deckOfCards
+class Card:
+    """A class modeled for a Card"""
 
-class card():
-    SUITS = ("Clubs", "Diamonds", "Hearts", "Spades")
-    RANKS = (
-                "2", "3", "4", "5", "6", "7", "8", "9", "10", 
-                "Jack", "Queen", "King", "Ace"
-            )
-    
+    def __init__(self, rank, suit):
+        """Initialize rank and suit attributes"""
 
+        self.rank = rank
+        self.suit = suit
 
-    
-    
+    def return_card(self):
+        return f"{self.rank} of {self.suit}"
