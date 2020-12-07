@@ -1,6 +1,8 @@
-from random import shuffle 
+from card import Card
+import random
 
-class deckOfCards:
+
+class Deck:
     """A class modelled for a deck"""
 
     def __init__(self):
@@ -28,5 +30,3 @@ class deckOfCards:
     def draw_card(self):
         """Draws a card"""
         return self.cards.pop()
-    
-    
