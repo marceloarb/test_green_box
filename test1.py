@@ -6,3 +6,5 @@ def test_sum():
 def test_square():
     assert math(4,4), "Should be 16"
 
+def test_green():
+    assert sum([1,3,4]) == 8, "Should be 8"

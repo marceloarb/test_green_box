@@ -4,7 +4,6 @@ from Hand.Hand import Hand
 class Player:
     """A class modelled for the players"""
 
-
     def __init__(self, name, amount_of_chips):
         """Initialize a player with name attribute"""
         self.name = name
