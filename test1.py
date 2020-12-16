@@ -8,3 +8,11 @@ def test_square():
 
 def test_green():
     assert sum([1,3,4]) == 8, "Should be 8"
+def test_print_all_the_numbers_greater_than_Y():
+    array = [100,45,2435,5,4,4,3,325,4,5,6,532,54,4,54,52,3]
+    y = 99
+    for i in array:
+        if i > y:
+            print(f"I is greated than Y i = {i}")
+
+test_print_all_the_numbers_greater_than_Y()
