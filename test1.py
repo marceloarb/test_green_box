@@ -15,4 +15,8 @@ def test_print_all_the_numbers_greater_than_Y():
         if i > y:
             print(f"I is greated than Y i = {i}")
 
+def test_get_green():
+    print("Hello World")
+    
+
 test_print_all_the_numbers_greater_than_Y()
