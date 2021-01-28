@@ -1,65 +1,13 @@
-const devs = [
-    {
-        name: 'Cameron',
-        age: 23,
-        gender: 'm',
-        "tech_stack" : ['html','css','js','React']
-    },
-    {
-        name: 'Liz',
-        age: 20,
-        gender: 'f',
-        "tech_stack" : ['java','spring-boot','MySql']
-    },
-    {
-        name: 'Chris',
-        age: 102,
-        gender: 'm',
-        "tech_stack" : ['react','express','python']
-    },
-    {
-        name: 'Rashid',
-        age: 27,
-        gender: 'm',
-        "tech_stack" : ['thymeleaf','postgres','js','Angular']
-    },
-    {
-        name: 'Annie',
-        age: 30,
-        gender: 'F',
-        "tech_stack" : ['html','scss','less','DynamoDB','GraphQL']
-    },
-    {
-        name: 'Dr. Patel',
-        age: 52,
-        gender: 'M',
-        "tech_stack" : null
-    },
-    {
-        name: 'Isaiah',
-        age: 48,
-        gender: 'M',
-        "tech_stack" : ['Java','','less','DynamoDB','GraphQL']
-    },
-    {
-        name: 'Saima',
-        age: 33,
-        gender: 'F',
-        "tech_stack" : ['MongoDB','Route53','Jenkins','Terraform','Kubernetes']
-    },
-    {
-        name: 'Omar',
-        age: 33,
-        gender: 'm',
-        "tech_stack" : ['c++']
-    },
-    {
-        name: 'Mariam',
-        age: 32,
-        gender: 'f',
-        "tech_stack" : null
-    },
-];
-
-const result = devs.filter(dev => dev.tech_stack != null);
-console.log(result);
+ //Add an example of the 5 primary JavaScript data types to the given mapObj. 
+ // The key is an example data type, and the value is the name of the data type. 
+ // An object data type has already been set as the 1st key / val pair.
+ const mapObj = new Map();
+ mapObj.set("object",{company : "TEKsystems"});
+ mapObj.set("company", "TEKsystems")
+console.log(mapObj.has("company"))
+ //The above console.log() statmeent returns false.
+ //  Write another console.log() statement explaining why this line of code prints false.
+ //  Refactor the code `mapObj.set()`, so the code : `mapObj.has() returns true.  The goal is to successfully check and see if {company : "TEKsystems"} exists in the mapObj.
+ 
+ //loop through the mapObj and create a new array of only the data types, leaving out the example keys of the mapObj.
+ //  Use array methods to do this.  Example output : ['string',number','boolean',array','object']
